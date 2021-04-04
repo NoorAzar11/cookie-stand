@@ -39,3 +39,41 @@ let Seattle={
         unorder.appendChild(totalcookies);
     }
 
+
+    let Tokyo={
+    location:'Tokyo',
+    minnumber: 3,
+    maxnumber: 24,
+    avgcookie: 1.2,
+    allcookieperhour:[],
+    sum:0,
+    
+     randomnumber:function(){
+        for(let i=0;operationHour.length;i++){
+             randomcust=Math.floor(math.random()*(this.maxnumber-this.minnumber+1)+this.minnumber);
+            this.allcookieperhour.push(cookieperhour);
+            this.sum=this.sum+cookieperhour;
+        }
+        
+    },
+
+    
+    let render:function(){
+        this.randomnumber();
+        let unorder = document.getElementById('ul');
+        let citylocation = document.createElement('li');
+        citylocation=this.location;
+        unorder.appendChild(citylocation);
+        for(let j=0;j<operationHour.length;j++)
+        {
+            let workinghours=document.createElement('li');
+            workinghours=operationHour[j]; +':'+this.allcookieperhour[j]+'cookiesseller';
+            unorder.appendChild(workinghours);
+        }
+        let totalcookies=document.createElement('li');
+    }
+
+    let totalcookies = document.createElement('li');
+    totalcookies='total: '+this.sum+'cookieseller';
+    unorder.appendChild(totalcookies),
+}
