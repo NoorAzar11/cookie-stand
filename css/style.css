@@ -3,3 +3,32 @@
     font-weight: bold;
     
 }
+
+table,tr,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+body {
+background-color: black;
+}
+
+body h1{
+ 
+    color: rgb(45, 243, 184);
+}
+
+body header h1{
+    font-weight: bolder;
+    font-size: larger;
+}
+
+body ul{
+    color: rgb(44, 225, 228);
+    font-weight: bolder;
+    font-size: larger;
+}
+
+body ul li{
+    color: rgb(20, 189, 192);
+}
