@@ -45,7 +45,7 @@ function firstrow1() {
     let secrow = document.createElement('th');
     firstrow.appendChild(secrow);
     secrow.textContent = 'Name';
-    for (let i = 0;i<operationHour;i++) {
+    for (let i= 0;i<operationHour.length;i++) {
         let headerrow = document.createElement('th');
         firstrow.appendChild(headerrow);
         headerrow.textContent=operationHour[i];
@@ -64,7 +64,7 @@ Allinfo.prototype.render = function () {
     let inforow= document.createElement('td');
     allstorerow.appendChild(inforow);
     inforow.textContent=this.location;
-    for (let i = 0; i < operationHour; i++) {
+    for (let i = 0; i < operationHour.length; i++) {
      let inoTd=document.createElement('td');
      allstorerow.appendChild(inoTd);
      inoTd.textContent=this.allcookiesperhour[i];
@@ -82,9 +82,9 @@ let footer1 = document.createElement('tr');
     footer1.appendChild(footer2);
     footer2.textContent = 'Total';
     let totaloftotal=0;
-    for (let i = 0;i<operationHour;i++) {
+    for (let i = 0;i<operationHour.length;i++) {
         let totalperhours=0;
-        for(let j=0;j<AllInfo2;j++){
+        for(let j=0;j<AllInfo2.length;j++){
             totalperhours +=AllInfo2[j].allcookiesperhour[i];
             totaloftotal +=AllInfo2[j].allcookiesperhour[i];
         }
