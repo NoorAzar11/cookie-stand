@@ -1,4 +1,10 @@
 'use strict';
+
+//Lab: 09 - Add a form to the cookie stand project
+
+
+
+
 //constructor function Lab 7.
 let operationHour = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
@@ -114,6 +120,53 @@ let Lima = new Allinfo('Lima', 2, 16, 4.6);
 console.log(Lima);
 
 firstrow1();
+
+//get  element by id 
+let form=document.getElementById('form');
+console.log(form);
+// add the eventlisner
+form.addEventListener('submit',keeper);
+function keeper(event){
+    console.log(event);
+    //prevent default behavior when we refresh the page
+    event.preventDefault();
+    //how we print them at console 
+    let storename1=event.target.StoreName.value;
+    console.log(storename1);
+
+    let lessnumber=event.target.MinNumber.value;
+    console.log(lessnumber);
+
+    let bignumber=event.target.MaxNamber.value;
+    console.log(bignumber);
+
+  let numberholder=event.target.AvgNamber.value;
+  console.log(numberholder);
+
+  //create new store-newobeject--if we want to add new element we use 'new' word
+
+  let newstore=new Allinfo(storename1,lessnumber,bignumber,numberholder);
+  console.log(newstore);
+
+  // add a method for the new store 
+//   newstore.getCust();
+//   newstore.getCookies();
+//   newstore.render();
+
+//to add new store to the table
+
+let allholder=document.getElementById('table');
+// allholder.textContent='';
+for (let i = 0; i < AllInfo2.length; i++) {
+
+    AllInfo2[i].getCust();
+    AllInfo2[i].getCookies();
+    AllInfo2[i].render();
+    
+}
+
+
+}
 
 for (let i = 0; i < AllInfo2.length; i++) {
 
