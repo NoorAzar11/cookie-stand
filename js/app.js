@@ -119,7 +119,7 @@ console.log(Paris);
 let Lima = new Allinfo('Lima', 2, 16, 4.6);
 console.log(Lima);
 
-firstrow1();
+
 
 //get  element by id 
 let form=document.getElementById('form');
@@ -155,7 +155,9 @@ function keeper(event){
 
 //to add new store to the table
 
-let allholder=document.getElementById('table');
+table.textContent='';
+
+//let allholder=document.getElementById('table');
 // allholder.textContent='';
 for (let i = 0; i < AllInfo2.length; i++) {
 
@@ -164,9 +166,10 @@ for (let i = 0; i < AllInfo2.length; i++) {
     AllInfo2[i].render();
     
 }
-
+footer();
 
 }
+firstrow1();
 
 for (let i = 0; i < AllInfo2.length; i++) {
 
