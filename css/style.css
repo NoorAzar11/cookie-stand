@@ -58,9 +58,36 @@ body ul li{
     color:rgb(161, 72, 72);
 }
 
-#form fieldset label
+#form fieldset label 
 {
     color:rgb(161, 72, 72);
     font-family:'Gloria Hallelujah', cursive;
     background-color:ivory;
+}
+
+#submit{
+    background-color: rgb(161, 72, 72);
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 50%;
+    transition-duration: 0.5s;
+    
+    display: inline-block;
+}
+
+
+#home{
+    font-size: xx-large;
+}
+
+
+
+  #home2  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 50%;
+    animation-duration: 4s;
+    animation-name: none;
 }
